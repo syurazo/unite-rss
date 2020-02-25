@@ -54,7 +54,7 @@ function! s:beSource.gather_candidates(args, context)
 
     if len(a:args) == 0
         " 初回のunite source
-        for key in keys(g:unite_source_rss_url_dict)
+        for key in sort(keys(g:unite_source_rss_url_dict))
             call add(items, {
                         \ 'word': key,
                         \ 'abbr': key,
