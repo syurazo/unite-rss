@@ -22,7 +22,7 @@ let s:beSource = {
 
 
 " define unite source
-function! unite#sources#read_rss#define()
+function! unite#sources#rss#define()
     return s:beSource
 endfunction
 
