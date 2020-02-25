@@ -11,12 +11,14 @@ let g:unite_source_rss_url_dict = get(g:, 'unite_source_rss_url_dict', {
             \ 'もぷろぐ' : 'http://ac-mopp.blogspot.jp/rss.xml',
             \ })
 
+let g:unite_source_rss_default_action = get(g:, 'unite_source_rss_default_action', 'open')
+
 let s:load_target = []
 
 let s:beSource = {
             \ 'name' : 'rss',
             \ 'action_table': {},
-            \ 'default_action': {'uri': 'open'},
+            \ 'default_action': {'uri': g:unite_source_rss_default_action },
             \ }
 
 
